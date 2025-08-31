@@ -7,12 +7,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
         :root {
-            --roblox-blue: #0076a8;
-            --roblox-dark-blue: #006085;
-            --roblox-orange: #ff5f00;
+            --roblox-blue: #27C5F5;
+            --roblox-dark-blue: #07368C;
+            --roblox-orange: #FFA600;
             --roblox-gray: #f2f2f2;
             --roblox-light-gray: #e6e6e6;
-            --roblox-border: #cccccc;
+            --roblox-border: #b5b5b5;
         }
 
         body {
@@ -22,7 +22,7 @@
         }
 
         .navbar {
-            background-color: white;
+            background-color: light grey;
             border-bottom: 1px solid var(--roblox-border);
             padding: 0 10px;
             display: flex;
@@ -48,8 +48,8 @@
 
         .navbar .search-bar input {
             width: 100%;
-            padding: 8px;
-            border: 1px solid var(--roblox-border);
+            padding: 10px;
+            border: 2px solid var(--roblox-border);
         }
         
         .search-dropdown {
@@ -57,7 +57,7 @@
             top: 100%;
             left: 0;
             right: 0;
-            background-color: white;
+            background-color: grey;
             border: 1px solid var(--roblox-border);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             z-index: 10;
@@ -69,7 +69,7 @@
         }
 
         .search-dropdown.active {
-            max-height: 300px;
+            max-height: 500px;
             overflow-y: auto;
             opacity: 1;
             visibility: visible;
@@ -127,9 +127,9 @@
             top: 100%;
             right: 0;
             width: 250px;
-            background-color: white;
-            border: 1px solid var(--roblox-border);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: grey;
+            border: 2px solid var(--roblox-border);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             z-index: 10;
             max-height: 0;
             overflow: hidden;
@@ -141,7 +141,7 @@
         .notification-dropdown.active {
             max-height: 200px;
             overflow-y: auto;
-            opacity: 1;
+            opacity: 0.60;
             visibility: visible;
         }
 
@@ -153,7 +153,7 @@
 
         .navbar .user-menu .currency {
             padding: 10px;
-            color: gray;
+            color: black;
         }
 
         .navbar .user-menu .robux-balance {
@@ -262,7 +262,7 @@
 
     <div class="navbar">
         <div class="logo">
-            <img src="images/boblox-classic (1).png" alt="My Custom Logo">
+            <img src="images/boblox-classic (1).png" alt="NIMABLOX ☺ early beta logo">
         </div>
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search">
@@ -282,7 +282,7 @@
                 </div>
             </div>
             <div class="currency">
-                <span class="robux-balance">10 R$</span>
+                <span class="robux-balance">100 B(eta)$</span>
             </div>
         </div>
     </div>
@@ -315,8 +315,8 @@
                         <div class="players">0 Players</div>
                     </div>
                 </div>
-                <div class="game-card" data-title="Super Mario Blox">
-                    <img src="images/costume4.png" alt="Super Mario Blox Thumbnail">
+                <div class="game-card" data-title="tetris extreme">
+                    <img src="images/costume4.png" alt="tetris extreme Thumbnail">
                     <div class="game-card-info">
                         <div class="title">Super Mario Blox</div>
                         <div class="players">0 Players</div>
@@ -344,7 +344,7 @@
     <div id="gameModal" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <p>BRB just working on some code</p>
+            <p>WIP! Just working on some code.</p>
         </div>
     </div>
 
