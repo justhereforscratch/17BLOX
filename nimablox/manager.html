@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMABLOX - Search Results</title>
+    <!-- Include the same styles for consistency -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add manager-specific styles if needed */
+        .manager-page-content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .search-results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .no-results {
+            text-align: center;
+            color: gray;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Include the same navbar from homepage.html for a consistent user experience -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/boblox-classic (1).png" alt="My Custom Logo">
+        </div>
+        <div class="search-bar">
+            <!-- Search bar on manager page for new searches -->
+            <form action="manager.html" method="get">
+                <input type="text" name="query" id="searchInput" placeholder="Search">
+            </form>
+        </div>
+        <div class="user-menu">
+            <div class="notification-icon-container">
+                <div class="notification-icon">
+                    <img src="images/costume3 (1).png" alt="Notifications">
+                </div>
+                <div id="notificationDropdown" class="notification-dropdown">
+                    <div class="nothing-found">Nothing found</div>
+                </div>
+            </div>
+            <div class="currency">
+                <span class="robux-balance">10 R$</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manager page content -->
+    <main class="manager-page-content">
+        <div class="search-results-header">
+            <h2 id="resultsTitle">Search Results for ""</h2>
+            <a href="homepage.html">Back to Home</a>
+        </div>
+        <div id="searchResultsGrid" class="games-grid">
+            <!-- Search results will be populated here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Games data (in a script for easy access) -->
+    <script>
+        const allGames = [
+            { title: "My Awesome Game", players: "0 Players", image: "images/costume4.png", link: "game1.html" },
+            { title: "Another Cool Game", players: "50 Players", image: "images/costume4.png", link: "game2.html" },
+            { title: "New Experience", players: "12 Players", image: "images/costume4.png", link: "game3.html" },
+            { title: "A Fun Time", players: "100 Players", image: "images/costume4.png", link: "game4.html" },
+            // Add all your games here
+        ];
+    </script>
+    <script src="manager.js"></script>
+</body>
+</html>
